@@ -1,13 +1,11 @@
 import React from "react";
 import "./Todo.css";
 
-const Todo = () => {
+const Todo = ({ description }) => {
   return (
     <div className="tasks-list">
-      <p className="tasks-item">
-        Welcome to Web Development, GitHub, HTML, CSS
-      </p>
-      <button className="remove-button">Remove</button>
+      <p className="tasks-item">{description}</p>
+      <button className="remove-button">Done</button>
     </div>
   );
 };
